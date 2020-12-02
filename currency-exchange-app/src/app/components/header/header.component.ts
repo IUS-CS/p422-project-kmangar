@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
+  navbarOpen = false;
 
+  // tslint:disable-next-line:typedef
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   ngOnInit(): void {
   }
+
 
 }
