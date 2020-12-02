@@ -1,15 +1,13 @@
+<div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="selectedData">
+  <label ngbButtonLabel class="btn-primary" *ngFor="let data of datas">
 
-<div>
-  <h2 align="center"><b>Convert</b></h2>
-  <table class="table table-striped">
-    <tr>
-      <th class="thead-light">Country</th>
-      <th>Rate</th>
-    </tr>
-    <tr *ngFor="let info of data">
-      <td><b>{{info.Country}}</b></td>
-      <td>{{info.description}}</td>
-      <td><ul><a href="#"> {{info.notesLink}}</a></ul></td>
-    </tr>
-  </table>
+    <input ngbButton type="radio" [value]="data"> {{data.title}}
+  </label>
+
 </div>
+<hr>
+<div *ngIf="selectedData">
+  <!--selected profile is: {{selectedProfile.name}} -->
+  <app-table [data]="selectedData"></app-table>
+</div>
+
