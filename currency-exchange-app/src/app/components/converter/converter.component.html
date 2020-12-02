@@ -1,1 +1,15 @@
-<p>converter works!</p>
+
+<div>
+  <h2 align="center"><b>Convert</b></h2>
+  <table class="table table-striped">
+    <tr>
+      <th class="thead-light">Country</th>
+      <th>Rate</th>
+    </tr>
+    <tr *ngFor="let info of data">
+      <td><b>{{info.Country}}</b></td>
+      <td>{{info.description}}</td>
+      <td><ul><a href="#"> {{info.notesLink}}</a></ul></td>
+    </tr>
+  </table>
+</div>

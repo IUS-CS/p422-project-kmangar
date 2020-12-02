@@ -6,6 +6,7 @@ import { PageNotFoundComponent} from './components/page-not-found/page-not-found
 const routes: Routes = [
   {path: 'converter', component: ConverterComponent},
   {path: '', redirectTo: '/converter', pathMatch: 'full'},
+  {path: 'page-not-found', component: PageNotFoundComponent},
   {path: '***', component: PageNotFoundComponent}
 ];
 
