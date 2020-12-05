@@ -1,6 +1,10 @@
+<div align="center" class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="selectedData">
+  <label ngbButtonLabel class="btn-primary" *ngFor="let data of datas">
 
-<div>
-  <h2 align="center"><b>Convert</b></h2>
+    <input ngbButton type="radio" [value]="data"> {{data.title}}
+
+<div *ngIf="selectedData">
+  <h2 align="center"><b>Currency rates </b></h2>
   <table class="table table-striped">
     <tr>
       <th class="thead-light">Country</th>
