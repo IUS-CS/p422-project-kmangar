@@ -10,9 +10,12 @@ import {Data} from '../../models/data';
 export class TableComponent implements OnInit {
   @Input() data: Data;
 
+  selectedData: Data;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

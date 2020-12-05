@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ConverterComponent } from './components/converter/converter.component';
 import { PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
-// @ts-ignore
-import { TableComponent} from './components/table/table-Component.component';
+import { TableComponent} from './components/table/table.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/converter',
+    pathMatch: 'full',
+  },
   {path: 'converter', component: ConverterComponent},
-  {path: '', redirectTo: '/converter', pathMatch: 'full'},
   {path: 'table', component: TableComponent},
-  {path: 'history', component: TableComponent},
-  {path: '***', component: PageNotFoundComponent},
-
+  {path: 'page-not-found', component: PageNotFoundComponent},
+  {path: '***', component: PageNotFoundComponent}
 ];
 
 @NgModule({
