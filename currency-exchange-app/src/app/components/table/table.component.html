@@ -1,18 +1,16 @@
-<div align="center" class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="selectedData">
-  <label ngbButtonLabel class="btn-primary" *ngFor="let data of datas">
 
-    <input ngbButton type="radio" [value]="data"> {{data.title}}
+<h1 class="border-bottom btn-light text-center"><b>Conversion of $1 USD </b></h1>
 
-<div *ngIf="selectedData">
-  <h2 align="center"><b>Currency rates </b></h2>
-  <table class="table table-striped">
-    <tr>
-      <th class="thead-light">Country</th>
-      <th>Rate</th>
-    </tr>
-    <tr *ngFor="let info of data.country">
-      <td><b>{{info.name}}</b></td>
-      <td>{{info.rates}}</td>
-    </tr>
-  </table>
-</div>
+<table class="table table-striped bold" *ngFor="let data of datas">
+  <tr>
+    <th class="btn-secondary text-center">Country</th>
+    <th class="btn-secondary text-center" >Rate</th>
+  </tr>
+  <tr *ngFor="let info of data.country">
+    <td class="text-center"><b>{{info.name}}</b></td>
+    <td class="text-center">{{info.rates}}</td>
+  </tr>
+</table>
+
+
+

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-info " >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
   <a class="navbar-brand" href="#">Currency Converter App</a>
   <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen }">
     <ul ngbNav routerLinkActive="active">
       <li ngbNavItem="converter">
-        <a class="nav-link btn-info" routerLink="converter" >Converter</a>
+        <a class="nav-link btn-dark btn-outline-light" routerLink="converter" >Converter</a>
       </li>
       <li ngbNavItem>
-        <a class="nav-link btn-info" routerLink="table" >Table</a>
+        <a class="nav-link btn-dark btn-outline-light" routerLink="table" >Table</a>
       </li>
       <li ngbNavItem>
-        <a class="nav-link btn-info" routerLink="about" >About</a>
+        <a class="nav-link btn-dark btn-outline-light " routerLink="about" >About</a>
       </li>
     </ul>
   </div>
