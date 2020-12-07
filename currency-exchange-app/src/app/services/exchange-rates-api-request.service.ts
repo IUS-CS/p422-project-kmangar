@@ -5,9 +5,7 @@ import { Observable} from 'rxjs';
 import { environment} from '../../environments/environment.prod';
 import { ExchangeRatesResponse} from '../interface/exchange-rates';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ExchangeRatesApiRequestService {
 
   constructor(public http: HttpClient) { }
