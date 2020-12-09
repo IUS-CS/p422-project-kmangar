@@ -8,8 +8,4 @@ export enum FormNames {
 export enum Currency {
   USD = 'USD',
 }
-// for stats
-export interface Statistics {
-  name: string;
-  summary: number;
-}
+

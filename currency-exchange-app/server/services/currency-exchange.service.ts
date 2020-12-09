@@ -1,7 +1,7 @@
 import {Injectable, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
-import {MappedCurrencyRateObject} from '../interface/exchange-rates';
+import {MappedCurrencyRateObject} from '../../src/app/interface/exchange-rates';
 
 @Injectable()
 export class CurrencyExchangeService implements OnInit {
@@ -17,8 +17,6 @@ export class CurrencyExchangeService implements OnInit {
   public fromCurrencies: string[] = [];
   public toCurrencies: string[] = [];
 
-  public currentDate: string;
-  public currentTime: string;
   constructor() {}
 
   ngOnInit() {}
