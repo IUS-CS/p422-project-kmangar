@@ -1,0 +1,23 @@
+h1{
+  padding-top: 50px;
+  text-align: left;
+  font-weight: bold;
+  font-family: Monaco;
+  padding-bottom: 25px;
+}
+
+p{
+  font-family: Roboto;
+  font-weight: bolder;
+  color: lightgreen;
+  margin: 0px;
+}
+
+body{
+  background: darkseagreen;
+}
+.conversion-result-area,
+.conversion-info-area{
+  background: dimgray;
+  padding: 12px;
+}
