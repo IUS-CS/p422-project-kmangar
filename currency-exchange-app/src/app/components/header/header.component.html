@@ -1,22 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-  <a class="navbar-brand" routerLink="converter">Currency Converter App</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark row" >
+  <a class="navbar-brand card-title" routerLink="converter">Currency Exchange App</a>
   <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen }">
     <ul ngbNav routerLinkActive="active">
-      <li ngbNavItem="converter">
+      <li class="btn" ngbNavItem="converter">
         <a class="nav-link btn-dark btn-outline-light" routerLink="converter" >Converter</a>
       </li>
-      <li ngbNavItem>
+      <li class="btn" ngbNavItem>
         <a class="nav-link btn-dark btn-outline-light" routerLink="table" >Table</a>
       </li>
-      <li ngbNavItem>
+      <li class="btn" ngbNavItem>
         <a class="nav-link btn-dark btn-outline-light " routerLink="about" >About</a>
       </li>
-      <li ngbNavItem>
-        <a class="nav-link btn-dark btn-outline-light " routerLink="page-not-found" >free money</a>
+      <li class="btn" ngbNavItem>
+        <a class="nav-link btn-dark btn-outline-light " routerLink="page-not-found" >Free Money</a>
       </li>
     </ul>
   </div>

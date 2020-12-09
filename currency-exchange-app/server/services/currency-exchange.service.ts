@@ -19,13 +19,7 @@ export class CurrencyExchangeService implements OnInit {
 
   public currentDate: string;
   public currentTime: string;
-
-  static toTwoDigits(givenNumber: number) {
-    return givenNumber > 9 ? `${givenNumber}` : `0${givenNumber}`;
-  }
   constructor() {}
 
-  ngOnInit(): void {
-        throw new Error('Method not implemented.');
-  }
+  ngOnInit() {}
 }
