@@ -25,3 +25,6 @@ User would be able to:
 * select what country they want to convert to 
 * add more country to compare 
 * delete country 
+<h1></h1>
+
+![](./files/currency-converter-app.gif)
