@@ -20,6 +20,7 @@ import { AboutComponent } from './components/about/about.component';
 import {environment} from '../environments/environment';
 import {ExchangeRatesApiRequestService} from '../../server/services/exchange-rates-api-request.service';
 import {CurrencyExchangeService} from '../../server/services/currency-exchange.service';
+import {TableComponent} from './components/table/table.component';
 
 // tslint:disable-next-line:typedef
 export function createTranslateLoader(http: HttpClient) {
@@ -31,6 +32,7 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     ConverterComponent,
     AboutComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
